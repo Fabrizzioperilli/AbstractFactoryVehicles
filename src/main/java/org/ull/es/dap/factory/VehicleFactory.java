@@ -5,7 +5,7 @@ import org.ull.es.dap.brands.bmw.VehicleBMW;
 import org.ull.es.dap.brands.mercedezbenz.VehicleMercedesBenz;
 
 public interface VehicleFactory {
-    VehicleAudi createVehicleAudi();
-    VehicleBMW createVehicleBMW();
-    VehicleMercedesBenz createVehicleMercedesBenz();
+    VehicleAudi createVehicleAudi(String brand, String type, String model, int year, String fuel, double price, String imageURL);
+    VehicleBMW createVehicleBMW(String brand, String type, String model, int year, String fuel, double price, String imageURL);
+    VehicleMercedesBenz createVehicleMercedesBenz(String brand, String type, String model, int year, String fuel, double price, String imageURL);
 }
