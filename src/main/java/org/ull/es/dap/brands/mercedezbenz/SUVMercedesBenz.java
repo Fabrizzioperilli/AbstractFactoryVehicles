@@ -8,7 +8,7 @@ public class SUVMercedesBenz implements VehicleMercedesBenz {
 	private String model;
 	private int year;
 	private String fuel;
-	double price;
+	private double price;
 
 	private String imageURL;
 
@@ -27,11 +27,11 @@ public class SUVMercedesBenz implements VehicleMercedesBenz {
 	@Override
 	public String description() {
 		return  "Marca: " + brand + '\n' +
-						"Tipo de vehículo: " + type + '\n' +
-						"Modelo: " + model + '\n'+
-						"Año: " + year + '\n' +
-						"Combustible: " + fuel + '\n' +
-						"Precio: " + price + '\n';
+				"Tipo de vehículo: " + type + '\n' +
+				"Modelo: " + model + '\n'+
+				"Año: " + year + '\n' +
+				"Combustible: " + fuel + '\n' +
+				"Precio: " + price +"€" + '\n';
 	}
 
 	public String getModel() {

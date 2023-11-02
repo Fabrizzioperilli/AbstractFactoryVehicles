@@ -8,7 +8,7 @@ public class CabrioAudi implements VehicleAudi {
     private String model;
     private int year;
     private String fuel;
-    double price;
+    private double price;
 
     private String imageURL;
 
@@ -31,7 +31,7 @@ public class CabrioAudi implements VehicleAudi {
                 "Modelo: " + model + '\n'+
                 "Año: " + year + '\n' +
                 "Combustible: " + fuel + '\n' +
-                "Precio: " + price + '\n';
+                "Precio: " + price +"€" + '\n';
     }
 
     public String getModel() {
