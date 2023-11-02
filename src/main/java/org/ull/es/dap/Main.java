@@ -1,7 +1,11 @@
 package org.ull.es.dap;
 
+import javax.swing.SwingUtilities;
+
+import org.ull.es.dap.gui.MainWindow;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        MainWindow mainWindow = new MainWindow();
     }
 }
