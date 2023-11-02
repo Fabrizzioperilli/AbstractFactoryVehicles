@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.List;
 
 public class VehicleWindow extends JFrame {
-    public static final String SUV = "Suv";
+    public static final String SUV = "SUV";
     public static final String SEDAN = "Sedan";
     public static final String CABRIO = "Cabrio";
     private JLabel titleLabel, logoLabel;
@@ -46,7 +46,7 @@ public class VehicleWindow extends JFrame {
     private void initializeUI() {
         setLayout(null);
         setResizable(false);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(930, 700);
         setLocationRelativeTo(null);
         setVisible(true);

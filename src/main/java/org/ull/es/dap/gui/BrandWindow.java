@@ -17,6 +17,9 @@ import java.util.List;
 
 public class BrandWindow extends JFrame {
 
+  public static final String AUDI = "Audi";
+  public static final String BMW = "BMW";
+  public static final String MERCEDES_BENZ = "Mercedes Benz";
   private JLabel titleLabel;
 
   public BrandWindow(String typeVehicle) {
@@ -38,7 +41,7 @@ public class BrandWindow extends JFrame {
 private void initializeUI() {
   setLayout(null);
   setResizable(false);
-  setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
   setSize(1000, 700);
   setLocationRelativeTo(null);
   setVisible(true);
@@ -52,30 +55,29 @@ private void addTitleLabel(String typeVehicle) {
 }
 
   private void addAudiBrand(String typeVehicle) {
-    JButton audiButton = new JButton("Audi");
+    JButton audiButton = new JButton(AUDI);
     add(audiButton);
     audiButton.setBounds(90, 480, 200, 50);  // Configura la posición y el tamaño del botón Audi
-    audiButton.addActionListener(e -> openVehicleWindow(typeVehicle, "Audi"));
+    audiButton.addActionListener(e -> openVehicleWindow(typeVehicle, AUDI));
   }
 
   private void addBMWBrand(String typeVehicle) {
-    JButton bmwButton = new JButton("BMW");
+    JButton bmwButton = new JButton(BMW);
     add(bmwButton);
     bmwButton.setBounds(370, 480, 200, 50);  // Configura la posición y el tamaño del botón BMW
-    bmwButton.addActionListener(e -> openVehicleWindow(typeVehicle, "BMW"));
+    bmwButton.addActionListener(e -> openVehicleWindow(typeVehicle, BMW));
   }
 
   private void addMercedesBenzBrand(String typeVehicle) {
-    JButton mercedesButton = new JButton("MercedesBenz");
+    JButton mercedesButton = new JButton(MERCEDES_BENZ);
     add(mercedesButton);
     mercedesButton.setBounds(650, 480, 200, 50); // Configura la posición y el tamaño del botón Mercedes Benz
-    mercedesButton.addActionListener(e -> openVehicleWindow(typeVehicle, "Mercedes Benz"));
+    mercedesButton.addActionListener(e -> openVehicleWindow(typeVehicle, MERCEDES_BENZ));
   }
 
   private void openVehicleWindow(String typeVehicle, String brand) {
     VehicleWindow vehiclewindow = new VehicleWindow(typeVehicle, brand);
     vehiclewindow.setVisible(true);
-    this.dispose(); // Cierra la segunda ventana
   }
 
   private void addLogoLabel(Parser dataBrands, int newWidth, int newHeight) {

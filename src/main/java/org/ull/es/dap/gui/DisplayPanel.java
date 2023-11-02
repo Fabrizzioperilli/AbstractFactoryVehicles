@@ -22,7 +22,7 @@ public class DisplayPanel extends JScrollPane {
     public static final String BMW = "BMW";
     public static final String AUDI = "Audi";
     public static final String MERCEDES_BENZ = "Mercedes Benz";
-    private static final String SUV = "Suv";
+    private static final String SUV = "SUV";
     private static final String CABRIO = "Cabrio";
     private static final String SEDAN = "Sedan";
     private String brand;

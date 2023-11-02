@@ -83,15 +83,15 @@ public class MainWindow extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 if (vehicleTypeComboBox.getSelectedItem() != null && vehicleTypeComboBox.getSelectedItem().toString() != "") {
                     String selectedVehicleType = (String) vehicleTypeComboBox.getSelectedItem();
-                    
+
                     if (e.getSource() == acceptButton) {
                         if (selectedVehicleType.contains("Despliegue para ver las opciones...")) {
                             JOptionPane.showMessageDialog(null, "Primero debe seleccionar una de las opciones para poder continuar.");
+                        } else {
+                            SwingUtilities.invokeLater(() -> new BrandWindow(selectedVehicleType));
                         }
-                    } else {
-                        SwingUtilities.invokeLater(() -> new BrandWindow(selectedVehicleType));
                     }
-                } 
+                }
             }
         });
     }
