@@ -73,7 +73,7 @@ private void addTitleLabel(String typeVehicle) {
   }
 
   private void openVehicleWindow(String typeVehicle, String brand) {
-    VehicleWindow vehiclewindow = new VehicleWindow(tipoVehiculo, marca);
+    VehicleWindow vehiclewindow = new VehicleWindow(typeVehicle, brand);
     vehiclewindow.setVisible(true);
     this.dispose(); // Cierra la segunda ventana
   }
