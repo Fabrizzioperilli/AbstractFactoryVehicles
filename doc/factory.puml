@@ -1,0 +1,29 @@
+@startuml
+title __Factory's Class Diagram__\n
+
+class org.ull.es.dap.factory.SUVFactory {
++ VehicleAudi createVehicleAudi(String,String,String,int,String,double,String)
++ VehicleBMW createVehicleBMW(String,String,String,int,String,double,String)
++ VehicleMercedesBenz createVehicleMercedesBenz(String,String,String,int,String,double,String)
+}
+class org.ull.es.dap.factory.CabrioFactory {
++ VehicleAudi createVehicleAudi(String,String,String,int,String,double,String)
++ VehicleBMW createVehicleBMW(String,String,String,int,String,double,String)
++ VehicleMercedesBenz createVehicleMercedesBenz(String,String,String,int,String,double,String)
+}
+interface org.ull.es.dap.factory.VehicleFactory {
+~ VehicleAudi createVehicleAudi(String,String,String,int,String,double,String)
+~ VehicleBMW createVehicleBMW(String,String,String,int,String,double,String)
+~ VehicleMercedesBenz createVehicleMercedesBenz(String,String,String,int,String,double,String)
+}
+class org.ull.es.dap.factory.SedanFactory {
++ VehicleAudi createVehicleAudi(String,String,String,int,String,double,String)
++ VehicleBMW createVehicleBMW(String,String,String,int,String,double,String)
++ VehicleMercedesBenz createVehicleMercedesBenz(String,String,String,int,String,double,String)
+}
+
+
+org.ull.es.dap.factory.VehicleFactory <|.. org.ull.es.dap.factory.SUVFactory
+org.ull.es.dap.factory.VehicleFactory <|.. org.ull.es.dap.factory.CabrioFactory
+org.ull.es.dap.factory.VehicleFactory <|.. org.ull.es.dap.factory.SedanFactory
+@enduml

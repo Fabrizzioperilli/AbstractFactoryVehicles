@@ -1,0 +1,83 @@
+@startuml
+title __VehicleFactory's Class Diagram__\n
+
+class org.ull.es.dap.factory.SUVFactory {
+}
+class org.ull.es.dap.brands.bmw.SUVBMW {
+}
+class org.ull.es.dap.gui.VehicleWindow {
+}
+class org.ull.es.dap.gui.BrandWindow {
+
+}
+class org.ull.es.dap.Main {
+}
+class org.ull.es.dap.connections.ParserBrands {
+}
+class org.ull.es.dap.brands.mercedezbenz.CabrioMercedesBenz {
+}
+class org.ull.es.dap.brands.audi.SedanAudi {
+}
+interface org.ull.es.dap.brands.bmw.VehicleBMW {
+}
+class org.ull.es.dap.brands.audi.CabrioAudi {
+}
+class org.ull.es.dap.connections.HttpFileDownloader {
+}
+interface org.ull.es.dap.factory.VehicleFactory {
+}
+class org.ull.es.dap.brands.bmw.CabrioBMW {
+}
+abstract class org.ull.es.dap.connections.Parser {
+
+}
+class org.ull.es.dap.brands.audi.SUVAudi {
+}
+class org.ull.es.dap.gui.DisplayPanel {
+
+}
+class org.ull.es.dap.connections.CSVReader {
+
+}
+interface org.ull.es.dap.brands.audi.VehicleAudi {
+}
+interface org.ull.es.dap.brands.mercedezbenz.VehicleMercedesBenz {
+}
+class org.ull.es.dap.brands.bmw.SedanBMW {
+
+}
+class org.ull.es.dap.connections.ParserVehicles {
+}
+class org.ull.es.dap.gui.MainWindow {
+}
+class org.ull.es.dap.brands.mercedezbenz.SedanMercedesBenz {
+
+}
+class org.ull.es.dap.brands.mercedezbenz.SUVMercedesBenz {
+
+}
+class org.ull.es.dap.factory.SedanFactory {
+}
+class org.ull.es.dap.factory.CabrioFactory {
+}
+
+
+org.ull.es.dap.factory.VehicleFactory <|.. org.ull.es.dap.factory.SUVFactory
+org.ull.es.dap.brands.bmw.VehicleBMW <|.. org.ull.es.dap.brands.bmw.SUVBMW
+org.ull.es.dap.gui.JFrame <|-- org.ull.es.dap.gui.VehicleWindow
+org.ull.es.dap.gui.JFrame <|-- org.ull.es.dap.gui.BrandWindow
+org.ull.es.dap.connections.Parser <|-- org.ull.es.dap.connections.ParserBrands
+org.ull.es.dap.brands.mercedezbenz.VehicleMercedesBenz <|.. org.ull.es.dap.brands.mercedezbenz.CabrioMercedesBenz
+org.ull.es.dap.brands.audi.VehicleAudi <|.. org.ull.es.dap.brands.audi.SedanAudi
+org.ull.es.dap.brands.audi.VehicleAudi <|.. org.ull.es.dap.brands.audi.CabrioAudi
+org.ull.es.dap.brands.bmw.VehicleBMW <|.. org.ull.es.dap.brands.bmw.CabrioBMW
+org.ull.es.dap.brands.audi.VehicleAudi <|.. org.ull.es.dap.brands.audi.SUVAudi
+org.ull.es.dap.gui.JScrollPane <|-- org.ull.es.dap.gui.DisplayPanel
+org.ull.es.dap.brands.bmw.VehicleBMW <|.. org.ull.es.dap.brands.bmw.SedanBMW
+org.ull.es.dap.connections.Parser <|-- org.ull.es.dap.connections.ParserVehicles
+org.ull.es.dap.gui.JFrame <|-- org.ull.es.dap.gui.MainWindow
+org.ull.es.dap.brands.mercedezbenz.VehicleMercedesBenz <|.. org.ull.es.dap.brands.mercedezbenz.SedanMercedesBenz
+org.ull.es.dap.brands.mercedezbenz.VehicleMercedesBenz <|.. org.ull.es.dap.brands.mercedezbenz.SUVMercedesBenz
+org.ull.es.dap.factory.VehicleFactory <|.. org.ull.es.dap.factory.SedanFactory
+org.ull.es.dap.factory.VehicleFactory <|.. org.ull.es.dap.factory.CabrioFactory
+@enduml

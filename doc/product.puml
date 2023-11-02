@@ -1,0 +1,41 @@
+@startuml
+title __Product's Class Diagram__\n
+
+class bmw.SedanBMW {
+}
+class mercedezbenz.SedanMercedesBenz {
+}
+class mercedezbenz.SUVMercedesBenz {
+
+}
+class bmw.CabrioBMW {
+
+}
+interface mercedezbenz.VehicleMercedesBenz {
+}
+class audi.CabrioAudi {
+}
+interface bmw.VehicleBMW {
+}
+interface audi.VehicleAudi {
+}
+class mercedezbenz.CabrioMercedesBenz {
+}
+class audi.SedanAudi {
+}
+class audi.SUVAudi {
+}
+class bmw.SUVBMW {
+}
+
+
+bmw.VehicleBMW <|.. bmw.SedanBMW
+mercedezbenz.VehicleMercedesBenz <|.. mercedezbenz.SedanMercedesBenz
+mercedezbenz.VehicleMercedesBenz <|.. mercedezbenz.SUVMercedesBenz
+bmw.VehicleBMW <|.. bmw.CabrioBMW
+audi.VehicleAudi <|.. audi.CabrioAudi
+mercedezbenz.VehicleMercedesBenz <|.. mercedezbenz.CabrioMercedesBenz
+audi.VehicleAudi <|.. audi.SedanAudi
+audi.VehicleAudi <|.. audi.SUVAudi
+bmw.VehicleBMW <|.. bmw.SUVBMW
+@enduml

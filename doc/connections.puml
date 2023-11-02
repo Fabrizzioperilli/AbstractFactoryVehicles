@@ -1,0 +1,35 @@
+@startuml
+title __connections's Class Diagram__\n
+
+class org.ull.es.dap.connections.ParserBrands {
+# Object convert(String,String)
+}
+class org.ull.es.dap.connections.ParserVehicles {
+# Object convert(String,String)
+}
+class org.ull.es.dap.connections.CSVReader {
+- String header
+- String url
+- List<String> records
++ String getHeader()
++ List<String> getRecords()
++ void partialPrint(int)
++ String getUrl()
+}
+abstract class org.ull.es.dap.connections.Parser {
+- CSVReader csvReader
+- List<List<Object>> data
+- String[] header
+# {abstract}Object convert(String,String)
++ List<List<Object>> getData()
++ String[] getHeader()
+}
+class org.ull.es.dap.connections.HttpFileDownloader {
+- {static} int BUFFER_SIZE
++ {static} String downloadFromURL(String)
+}
+
+
+org.ull.es.dap.connections.Parser <|-- org.ull.es.dap.connections.ParserBrands
+org.ull.es.dap.connections.Parser <|-- org.ull.es.dap.connections.ParserVehicles
+@enduml
