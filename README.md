@@ -4,7 +4,7 @@
 
 ## :pencil2: Descripción
 
-El proyecto AbstractFactoryVehicles es una implementación del patrón de diseño de la Fábrica Abstracta en Java. El objetivo principal de este proyecto es demostrar el uso del patrón Abstract Factory en la creación de diferentes tipos de vehículos de diferentes marcas. Este proyecto ha sido desarrollado por un equipo de trabajo coordinado, con el objetivo de fusionar las contribuciones de cada miembro sin conflictos.
+El proyecto AbstractFactoryVehicles es una implementación del patrón de diseño Abstract Factory o Fábrica Abstracta en Java. El objetivo principal de este proyecto es demostrar el uso de este patrón en la creación de diferentes tipos de vehículos de diferentes marcas. Este proyecto ha sido desarrollado por un equipo de trabajo coordinado, con el objetivo de fusionar las contribuciones de cada miembro sin conflictos.
 
 <br />
 
